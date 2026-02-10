@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Primary Brand Colors */
+  --color-primary: #A73860;
+  --color-primary-dark: #8B2E4E;
+  --color-primary-light: #C4526F;
+
+  /* Burgundy Scale */
+  --color-burgundy-50: #fdf4f4;
+  --color-burgundy-100: #fbe8e9;
+  --color-burgundy-200: #f6d5d8;
+  --color-burgundy-300: #eeb3b8;
+  --color-burgundy-400: #e38691;
+  --color-burgundy-500: #d15968;
+  --color-burgundy-600: #b73d53;
+  --color-burgundy-700: #9a2e43;
+  --color-burgundy-800: #81293d;
+  --color-burgundy-900: #6f2739;
+  --color-burgundy-950: #3e111b;
+
+  /* Gradients */
+  --background-image-gradient-hero: linear-gradient(to right, #8B1538 0%, #2D1B3D 100%);
+  --background-image-gradient-card: linear-gradient(135deg, #A73860 0%, #4A235A 100%);
+  --background-image-gradient-strict-hero: linear-gradient(to right, #8B1538 0%, #2D1B3D 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Force light mode values even in dark mode */
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
