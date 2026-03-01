@@ -10,7 +10,7 @@ import {
     getStatusColor,
     RequestStatus,
     SellRequest
-} from "@/app/used-mobile/data"
+} from "@/app/sell/data"
 import {
     CheckCircle,
     XCircle,
@@ -69,7 +69,7 @@ export default function AdminUsedPhones() {
             <header className="bg-white border-b sticky top-0 z-20">
                 <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                     <div className="flex items-center gap-4">
-                        <Link href="/used-mobile">
+                        <Link href="/sell">
                             <Button variant="outline-primary" className="h-9 px-3">
                                 <ArrowLeft className="h-4 w-4 mr-2" />
                                 Store View
