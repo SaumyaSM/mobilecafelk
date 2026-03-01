@@ -10,7 +10,7 @@ import {
     getStatusColor,
     RequestStatus,
     SellRequest
-} from "@/app/used-mobile/data"
+} from "@/app/sell/data"
 import {
     CheckCircle,
     XCircle,
