@@ -80,7 +80,7 @@ export default function AboutPage() {
                                 icon: ShoppingBag,
                                 title: "Sell Your Phone",
                                 description: "Get the best price for your used device with our easy selling process.",
-                                link: "/used-mobile",
+                                link: "/sell",
                                 linkText: "Sell Now"
                             },
                             {
