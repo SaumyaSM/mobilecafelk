@@ -5,7 +5,7 @@ export interface Product {
     id: string
     name: string
     brand: string
-    category: 'phone' | 'accessory' | 'part'
+    category: 'phone' | 'accessory'
     type?: string // For accessories: charger, case, earphones, etc.
     price: number
     originalPrice?: number
@@ -317,67 +317,6 @@ export const products: Product[] = [
         availableAt: 'shops',
         rating: 4.3,
         reviews: 203
-    },
-    // Parts
-    {
-        id: 'pt1',
-        name: 'iPhone 13 OLED Display',
-        brand: 'Apple',
-        category: 'part',
-        type: 'screen',
-        price: 25000,
-        originalPrice: 30000,
-        image: '/images/background.png',
-        specs: {
-            'Compatibility': 'iPhone 13 Original',
-            'Type': 'OLED',
-            'Refresh Rate': '60Hz',
-            'Quality': 'OEM'
-        },
-        condition: 'new',
-        inStock: true,
-        availableAt: 'shops',
-        rating: 4.8,
-        reviews: 42
-    },
-    {
-        id: 'pt2',
-        name: 'Samsung Galaxy S24 Ultra Battery',
-        brand: 'Samsung',
-        category: 'part',
-        type: 'battery',
-        price: 15000,
-        image: '/images/background4.jpg',
-        specs: {
-            'Compatibility': 'S24 Ultra',
-            'Capacity': '5000 mAh',
-            'Type': 'Li-Ion',
-            'Quality': 'Original'
-        },
-        condition: 'new',
-        inStock: false,
-        availableAt: 'store',
-        rating: 4.9,
-        reviews: 12
-    },
-    {
-        id: 'pt3',
-        name: 'iPhone 15 Pro Max Camera Glass',
-        brand: 'Apple',
-        category: 'part',
-        type: 'camera',
-        price: 4500,
-        image: '/images/background.png',
-        specs: {
-            'Compatibility': '15 Pro Max',
-            'Module': 'Triple Lens',
-            'Quality': 'OEM'
-        },
-        condition: 'refurbished',
-        inStock: true,
-        availableAt: 'both',
-        rating: 4.5,
-        reviews: 8
     }
 ]
 

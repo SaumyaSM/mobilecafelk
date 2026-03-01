@@ -2,6 +2,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
 const slides = [
@@ -37,7 +38,7 @@ export default function Hero() {
       <div className="relative z-10 flex h-full items-center justify-center text-center px-4">
         <div className="max-w-3xl text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            One Stop for All Things Mobile 📱
+            One stop for All Mobils 📱
           </h1>
 
           <p className="text-lg md:text-xl mb-6">
@@ -45,12 +46,16 @@ export default function Hero() {
           </p>
 
           <div className="flex justify-center gap-4">
-            <Button>
-              Get Started
-            </Button>
-            <Button variant="outline" className="text-white border-white">
-              Contact Us
-            </Button>
+            <Link href="/auth/signup/customer">
+              <Button>
+                Become a member
+              </Button>
+            </Link>
+            <Link href="/accessories">
+              <Button variant="outline" className="text-white border-white">
+                Register my shop
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -34,7 +34,7 @@ export default function AboutCulture() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Left Side - Image Grid */}
                 <div className="grid grid-cols-2 gap-4">
-                    <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative h-100 md:h-100 rounded-2xl overflow-hidden shadow-lg">
                         <Image
                             src="/images/background4.jpg"
                             alt="Technician repairing mobile phone"
@@ -42,7 +42,7 @@ export default function AboutCulture() {
                             className="object-cover"
                         />
                     </div>
-                    <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
                         <Image
                             src="/images/background.png"
                             alt="Mobile repair tools"
@@ -52,7 +52,7 @@ export default function AboutCulture() {
                     </div>
                     {/* Colored Card */}
                     <div
-                        className="rounded-2xl p-8 flex flex-col justify-center text-white shadow-lg h-64 md:h-80"
+                        className="rounded-2xl p-8 flex flex-col justify-center text-white shadow-lg h-80 md:h-96"
                         style={{ background: colors.gradients.heroSection.css }}
                     >
                         <span className="text-sm font-medium opacity-80 mb-2">Our goal</span>
@@ -60,7 +60,7 @@ export default function AboutCulture() {
                             "We will fix it, till we make it"
                         </h3>
                     </div>
-                    <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-lg">
+                    <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
                         <Image
                             src="/images/background2.jpg" // Using background2 as a placeholder for the 3rd image if distinct
                             alt="Electronic circuit board"

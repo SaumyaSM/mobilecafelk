@@ -4,12 +4,12 @@ import { useState, useMemo } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { colors } from "../constants/colors"
-import { products, shops, getBrands, getAccessoryTypes, getShopsForProduct, Product, Shop } from "./data"
+import { products, shops, getBrands, getAccessoryTypes, getShopsForProduct, Product, Shop } from "../buy/data"
 import { Search, Star, MapPin, Phone, ShoppingCart, Filter, Tag, Package } from "lucide-react"
 
-export default function BuyPage() {
+export default function AccessoriesPage() {
     // State management
-    const [selectedCategory, setSelectedCategory] = useState<'all' | 'phone' | 'accessory'>('phone')
+    const [selectedCategory, setSelectedCategory] = useState<'all' | 'phone' | 'accessory'>('accessory')
     const [selectedSource, setSelectedSource] = useState<'all' | 'store' | 'shops'>('all')
     const [selectedBrand, setSelectedBrand] = useState<string>('all')
     const [selectedCondition, setSelectedCondition] = useState<'all' | 'new' | 'refurbished'>('all')
@@ -61,9 +61,9 @@ export default function BuyPage() {
                 style={{ background: colors.gradients.heroSection.css }}
             >
                 <div className="container mx-auto max-w-6xl">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Shop Phones 📱</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Shop Accessories 🛒</h1>
                     <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-                        Browse our collection of premium mobile phones. Buy from our store or discover products at trusted partner shops.
+                        Browse our collection of premium accessories. Buy from our store or discover products at trusted partner shops.
                     </p>
                 </div>
             </section>
@@ -90,7 +90,7 @@ export default function BuyPage() {
                         <span className="text-sm font-semibold text-gray-700">Category:</span>
                         {[
                             { value: 'all', label: 'All', icon: Package },
-                            { value: 'phone', label: 'Phones', icon: ShoppingCart }
+                            { value: 'accessory', label: 'Accessories', icon: Tag }
                         ].map(({ value, label, icon: Icon }) => (
                             <button
                                 key={value}
